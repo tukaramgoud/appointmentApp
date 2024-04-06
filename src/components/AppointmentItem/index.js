@@ -2,19 +2,29 @@
 import './index.css'
 
 const AppointmentItem = props => {
-  const {itemDetails} = props
+  const {itemDetails, likedChanged} = props
+  const {name, date, isLiked, id} = itemDetails
+
+  const likedButtonClicked = () => {
+    likedChanged(id)
+  }
+
+  const imageUrl = isLiked
+    ? 'https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png'
+    : 'https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png'
   return (
     <div className="AppointmentItem-container">
       <div className="stared-isTrue">
-        <p className="mini-para">Dentist</p>
-        <button type="button" className="button-liked">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png"
-            alt="like"
-          />
+        <p className="mini-para">{name}</p>
+        <button
+          type="button"
+          className="button-liked"
+          onClick={likedButtonClicked}
+        >
+          <img src={imageUrl} alt="like" />
         </button>
       </div>
-      <p className="mini-para-2">Date : 20 july, 2024, Saturday</p>
+      <p className="mini-para-2">{date}</p>
     </div>
   )
 }

@@ -84,3 +84,14 @@
   border: 2px solid #8b5cf6;
   font-weight: 600;
 }
+.unOrdered-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.blue-added {
+  background-color: #8b5cf6;
+  color: white;
+}
