@@ -12,4 +12,75 @@
   background-color: white;
   border-radius: 10px;
   min-height: 60vh;
+  padding: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.user-input-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-container {
+  width: 50%;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.input-styling {
+  width: 80%;
+  padding: 7px;
+  border-radius: 5px;
+  outline: none;
+  font-family: Roboto;
+  color: #9796f0;
+  font-weight: 600;
+}
+.title-label {
+  color: #b5b7c4;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  display: block;
+}
+.button {
+  padding: 10px;
+  background-color: #8b5cf6;
+  color: white;
+  font-family: Roboto;
+  display: block;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+  border-width: 2px solid #b5b7c4;
+  margin-top: 10px;
+}
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second-heading {
+  font-family: Roboto;
+  font-size: 30px;
+  color: #171f46;
+  font-weight: 600;
+}
+.stared-button {
+  background-color: transparent;
+  padding: 7px;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  color: #8b5cf6;
+  border: 2px solid #8b5cf6;
+  font-weight: 600;
 }

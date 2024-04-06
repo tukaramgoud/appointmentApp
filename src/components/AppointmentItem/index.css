@@ -1,1 +1,32 @@
 /* Write your CSS here */
+.AppointmentItem-container {
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid #b5b7c4;
+  width: 30%;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.stared-isTrue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-liked {
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+}
+.mini-para {
+  color: #171f46;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 80%;
+}
+.mini-para-2 {
+  color: #b5b7c4;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 80%;
+}
